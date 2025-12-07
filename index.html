@@ -1,64 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>blessing my portfolio</title>
-        <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   </head>
-    <body>
-<nav class="navbar">
-    <a href="" class="logo">portfolio</a>
-<ul>
-    <li class="active"><a href="index.html">Home</a></li>
-     <li><a href="">about</a></li>
-      <li><a href="#">portfolio</a></li>
-        <li><a href="#">contact</a></li>
+<title>Enoma Joel</title>
+
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    padding-top: 184px;
+   
+}
+
+.header{
+    position: fixed;
+    top: 28px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:2px solid rgb(240, 238, 238);
+    padding: 10px 20px;
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.header li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header li {
+    display: flex;
+    align-items: center;
+}
+
+.blog a{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background-color:black;
+    padding:4px 6px;
+    border-radius:4px;
+}
+.picture{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 100%;
+    object-fit: cover;
+   margin-top: 108.104px;
+   margin-left: 18px;
+}
+.h1{
+    font-size: 28px;
+    margin: 10px 0 5px 0;
+    font-family: Arial;
+     margin-left: 18px;
+}
+.p{
+    font-size: 16px;
+    margin: 0;
+    font-family: Arial;
+    color: gray;
+    width: 284px;
+     margin-left: 18px;
+}
+ .hire{
+            margin-top:20px;
+            padding:10px 20px;
+            font-size:16px;
+            font-weight:600;
+            color:white;
+            background-color:black;
+            border:none;
+            border-radius:28px;
+            cursor:pointer;
+             margin-left: 18px;
+        }
+        .green{
+            display:inline-block;
+            width:10px;
+            height:10px;
+            background-color:green;
+            border-radius:100%;
+            margin-left:10px;
+            animation: pulse 2s infinite;
+            position: relative;
+            left: -35px;
+            
+        }
+        .active{
+            display:flex;
+            align-items:center;
+            margin-top:10px;
+            font-size:14px;
+            color:gray;
+            font-family:Arial, sans-serif;
+             padding:10px 30px;
+            font-size:16px;
+            font-weight:600;
+            color: green;
+            display: inline-block;
+            border: 2px solid green;
+            border-radius: 28px;
+             margin-left: 18px;
+        }
+         
+
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: transparent;
+    padding: 20px 0;
+    background-color: beige;
+  }
+
+  .marquee-content {
+    animation: scroll-left 10s linear infinite;
+    
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .iframe-wrapper {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+</style>
+</head>
+
+<body>
+
+<ul class="header">
+
+    <li><a href="index.html">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
+            <path d="M12 2 2 10h3v10h6v-6h2v6h6V10h3z"/>
+        </svg>
+    </a></li>
+
+    <li><a href="https://x.com/@joe8b8">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
+            <path d="M18.244 2H21.5l-7.57 8.64L23 22h-7.068l-5.51-7.215L3.98 22H0.5l8.084-9.21L1 2h7.214l4.987 6.482L18.244 2zM16.68 20h1.82L7.4 4h-1.9l11.18 16z"/>
+        </svg>
+    </a></li>
+
+    <li><a href="https://github.com/enomajoel">
+        <svg width="24" height="24" viewBox="0 0 16 16" fill="black">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 
+            3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+            2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+            0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+            0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 
+            1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 
+            1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+            3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 
+            1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 
+            16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+    </a></li>
+
+    <li><a href=" Enoma joel cv-resume.pdf " download="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
+            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.5L14.5 2H6zm7 1.5L19.5 10H13a1 1 0 0 1-1-1V3.5z"/>
+            <rect x="8" y="12" width="8" height="1.5" rx="0.5"/>
+            <rect x="8" y="15" width="6" height="1.5" rx="0.5"/>
+            <rect x="8" y="18" width="5" height="1.5" rx="0.5"/>
+        </svg>
+    </a></li>
+
+    <li class="blog"><a href="">Blog</a></li>
+
 </ul>
-</nav>
-        <div class="bar-animation">
-            <div class="bar"></div>
-             <div class="bar"></div>
-             <div class="bar"></div>
-             <div class="bar"></div>
-             <div class="bar"></div>
-             <div class="bar"></div>
-        </div>
-<section class="home">
-    <div class="home-info">
-        <h1>Enoma joel</h1>
-        <h2>i'am a 
-            <span style="--i:4;" data-text="front end developer">front end developer</span>
-            <span style="--i:3;" data-text="web designer">web designer</span>
-            <span style="--i:2;" data-text="graphic designer">graphic designer</span>
-            <span style="--i:1;" data-text="tictoker">tictoker</span>
-        </h2>
-        <p>loerl ispidum said sit loerl ispidum said sit loerl ispidum said sit loerl ispidum said sit loerl ispidum said sit loerl ispidum said sit </p>
-   <div class="btn-sci">
-    <a href="#" class="btn">dowload cv</a>
-    <div class="sci">
-        <a href="https://github.com/b8build48"><i class="fa-brands fa-github"></i></i></a>
-        <a href="https://www.instagram.com/EnomaJoel"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@enomajoel"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <!--content -->
+    
+        <img class="picture"src="AQMkNrkVUwEQdq_0KrADXkttQvnTk_RwN-fUgJif9yS-dwv-2sPeIZJQ85fvzo_8EyQ2076a-0UUyNXZuZcdg6Dow7FnPeZK2FtpxH7jAZtdxNvnbZEyYOw_kvaUtx2j.jpeg">
 
+    <div class="text box">
+         <h1 class="h1">hey i'm Enoma Joel frontend developer</h1>
+        <p class="p">
+          professor by day software developer by night 
+          creating inovative web experiences |
+            frontend developer | cyber security | video editor | tickoker/youtuber.</p>
     </div>
-   </div>
-    <div class="home-img">
-        <div class="img-box">
-            <div class="img-item">
-                <img src="ei_1754753880907-removebg-preview.png" alt="my portfolio pic">
-            </div>
-        </div>
+    <button class="hire">hire me</button> <div class="active"><div class="green"></div>active</div>
+      <div class="marquee-container">
+  <div class="marquee-content">
+    <div class="iframe-wrapper">
+      <iframe src="https://enomajoel.github.io/Cvrgen/" title="CVR Gen"></iframe>
     </div>
+    <div class="iframe-wrapper">
+      <iframe src="https://enomajoel.github.io/Dugegame-/" title="Duge Game"></iframe>
     </div>
-</section>
+    <div class="iframe-wrapper">
+      <iframe src="https://b8app.vercel.app" title="B8 App"></iframe>
+    </div>
+    <div class="iframe-wrapper">
+      <iframe src="https://kqzs.vercel.app" title="KQZS"></iframe>
+    </div>
+     
+    
+    <div class="iframe-wrapper">
+      <iframe src="https://b8app.vercel.app" title="B8 App"></iframe>
+    </div>
+    <div class="iframe-wrapper">
+      <iframe src="https://kqzs.vercel.app" title="KQZS"></iframe>
+    </div>
+    
+  </div>
+</div>
+<h1 class="about">ABOUT ME</h1>
+<p class="pp">
+I am a 14years old web3 developer with experince in creating responsive interface 
+i am the creator and founder of b8build48 and have a 2 years experience in software 
+i have knowlege in(basics web devlopment language: html, css, javascript; intermidiate: reactjs vuejs; and currently learning nodejs)
+i am young and pationate about software.
+</p>
+<div class="iframe-showcase">
+  <iframe src="" class="ifframe"></iframe>
+   <iframe src="" class="ifframe"></iframe>
+    <iframe src="" class="ifframe"></iframe>
+     <iframe src="" class="ifframe"></iframe>
+</div>
+<div class="containn">
+  <img class="joe8" src="IMG20250330170646.jpg" alt="Enoma joel pics ">
+</div>
+<div class="contain">
+   <img class="joe84" src="IMG20250615174703.jpg" alt="Enoma joel pics ">
+</div>
+<div class="work-container">
+  <p class="heli">my projects</p>
+<div class="workbox">
+    <p class="ppppp">powerful cv generator</p>
+          <iframe class="if" src="https://enomajoel.github.io/Cvrgen/" title="CVR Gen"></iframe>
+    
 
-    </body>
+</div>
+<div class="workbox">
+    <p class="ppppp">simple relaxing game</p>
+          <iframe class="if" src="https://enomajoel.github.io/Dugegame-/" title="Duge Game"></iframe>
+    
+</div>
+</div>
+<div class="workspace">
+  <h1 class="h11">my workspace</h1>
+  <img class="workspacepic" src="AQOaI2lig2uDyKdd_zhVx-UB4DDgI2hTAZXykvJbAXduTvRZ7L4vlY5PXZfGdN12RpTyEp8i_BOzPOC4IdbdJIL-D53NBQi-lwKCNUPazGr0ipuYmgpItY_zXOoOLpdT.jpeg" alt="my workspace">
+</div>
+<footer>
+ a b8build48 production &copy;
+ made with love 
+ <br>
+ <div class="hello">
+    <li><a href="index.html">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
+            <path d="M12 2 2 10h3v10h6v-6h2v6h6V10h3z"/>
+        </svg>
+    </a></li>
+
+    <li><a href="https://x.com/@joe8b8">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
+            <path d="M18.244 2H21.5l-7.57 8.64L23 22h-7.068l-5.51-7.215L3.98 22H0.5l8.084-9.21L1 2h7.214l4.987 6.482L18.244 2zM16.68 20h1.82L7.4 4h-1.9l11.18 16z"/>
+        </svg>
+    </a></li>
+
+    <li><a href="https://github.com/enomajoel">
+        <svg width="24" height="24" viewBox="0 0 16 16" fill="black">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 
+            3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+            2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+            0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+            0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 
+            1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 
+            1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+            3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 
+            1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 
+            16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+    </a></li>
+
+    <li><a href=" Enoma joel cv-resume.pdf " download="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
+            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.5L14.5 2H6zm7 1.5L19.5 10H13a1 1 0 0 1-1-1V3.5z"/>
+            <rect x="8" y="12" width="8" height="1.5" rx="0.5"/>
+            <rect x="8" y="15" width="6" height="1.5" rx="0.5"/>
+            <rect x="8" y="18" width="5" height="1.5" rx="0.5"/>
+        </svg>
+    </a></li>
+
+    <li class="blog"><a href="">Blog</a></li>
+  </div>
+</footer>
+      <style>
+    .ppppp{
+        z-index:999;
+        display:inline-block;
+        
+    }
+    .if{
+        position:relative;
+        right: 130px;
+    }
+        .hello li{
+          background-color: antiquewhite;
+             padding: 10px 0px;
+
+        }
+        .hello{
+          display: block;
+          list-style: none;
+             padding: 10px 0px;
+
+
+        }
+        footer{
+          text-align: center;
+          background-color: aqua;
+          width: 100%;
+          padding: 10px 0px;
+
+        }
+        .heli{
+          text-decoration: underline;
+          font-size: 28px;
+        }
+        .h11{
+          text-shadow: 3px 3px 3px rgb(rgb(240, 192, 192), rgb(238, 16, 193), rgb(171, 171, 244));
+          text-align: center;
+          font-size: 48px;
+         
+        }
+        .workbox{
+           width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+    margin-top: 8px;
+    
+   
+        }
+        .workspace{
+          margin-top: 400px;
+          background-color: black;
+          color: white;
+        }
+        .work-container{
+           overflow: hidden;
+    white-space: nowrap;
+    width: fit-content;
+    height: auto;
+    background: whitesmoke;
+    padding: 20px 10px;
+     margin: 84px auto;
+            
+        }
+        .workspacepic{
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          margin: 28px auto;
+          display: block;
+        }
+        .joe8{
+          width: 100px;
+          height: 128px;
+          background-color: black;
+         position: relative;
+          object-fit: contain;
+          margin: 0 auto;
+        }
+        .joe84{
+            width: 100px;
+          height: 128px;
+          background-color: black;
+         position: relative;
+          object-fit: contain;
+          margin: 0 auto;
+        }
+        .containn{
+         width: 100px;
+         height: 148px;
+         margin: 0 auto;
+         background-color: yellow;
+         transform: rotate(-45deg);
+        }
+        .contain{
+         width: 100px;
+         height: 148px;
+         margin: 0 auto;
+         background-color: yellow;
+         transform: rotate(45deg);
+        }
+       .about{
+        margin-left: 8px;
+        font-size: 18px;
+       }
+      .pp{
+        font-size: 14px;
+        color: gray;
+        height: 3px;
+        width: 80%;
+        margin-left: 8px;
+      }
+      .ifframe{
+        width: 28px;
+        height: 28px;
+       position: relative;
+       animation: scroll 4s linear infinite;
+
+      }
+    .iframe-showcase{
+      background-color: transparent;
+      width: 128px;
+      height: 28.24px;
+      margin: 184.84px auto;
+      z-index: 999;
+      overflow: hidden;
+        
+    }
+    @keyframes scroll {
+      0%{
+        transform: translateX(100px);
+      }
+      100%{
+        transform: translateX(-100px);
+        z-index: -1;
+      }
+    }
+       </style>
+</body>
 </html>
-
-
-
-
